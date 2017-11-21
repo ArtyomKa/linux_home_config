@@ -5,21 +5,18 @@ now=$(date +"%m_%d_%Y")
 echo $cur_dir
 cd $HOME
 
-ln -sf ${cur_dir}/vim ${HOME}/.vim
+files=(.bash_aliases .pythonrc  .bashrc .vimrc .vim)
 
-# install Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-
-files=(.bash_aliases .pythonrc  .bashrc .vimrc)
-
-#create symbolic links to the files:
+#create symbolic links to the files and folders:
 
 for f in "${files[@]}"
 do
     mv $HOME/${f} $HOME/${f}_backup_$now
     ln -sf ${cur_dir}/${f} $HOME/
 done
+
+# install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 #install poweline fonts for vim:
