@@ -44,3 +44,9 @@ let g:airline#extensions#syntastic#enabled = 1
 set laststatus=2
 
 set path+=**
+
+" file explorer configuration
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+" let g:netrw_browse_split = 1
+let g:netrw_winsize = 25
