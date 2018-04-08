@@ -1,3 +1,6 @@
+
+alias xclipsc='xclip -sel clip'
+
 function activate() {
 	possible_venv=("./venv" "./.venv")
 	
