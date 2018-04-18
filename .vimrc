@@ -19,25 +19,20 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-au BufNewFile,BufRead *.py call SetPEP8()
+set nobackup       "no backup files
+set nowritebackup  "only in case you don't want a backup file while editing
+set noswapfile     "no swap files
 
-function SetPEP8()	    
-  set tabstop=4
-  set softtabstop=4
-  set shiftwidth=4
-  set textwidth=79
-  set expandtab
-  set autoindent
-  set fileformat=unix
-endfunction
-
-let python_highlight_all=1
 syntax on
-
+set number 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
@@ -51,3 +46,7 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 " let g:netrw_browse_split = 1
 let g:netrw_winsize = 25
+
+" Themes
+set background=dark
+colorscheme solarized
