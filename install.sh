@@ -5,7 +5,7 @@ now=$(date +"%m_%d_%Y")
 echo $cur_dir
 cd $HOME
 
-files=(.bash_aliases .pythonrc  .bashrc .vimrc .vim)
+files=(.bash_aliases .pythonrc  .bashrc .vimrc .vim .gitconfig)
 
 #create symbolic links to the files and folders:
 
