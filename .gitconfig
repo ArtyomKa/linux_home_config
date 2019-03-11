@@ -1,0 +1,10 @@
+[user]
+	email = artyom.katsap@gmail.com
+	name = Artyom Katsap
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
+	unstage = reset HEAD --

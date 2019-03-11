@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#set default editor:
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # git prompt. taken from https://coderwall.com/p/pn8f0g/show-your-git-status-and-branch-in-color-at-the-command-prompt
 
@@ -168,3 +171,5 @@ export PYTHONSTARTUP=~/.pythonrc
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
