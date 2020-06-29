@@ -19,7 +19,7 @@ endfunction
 
 let python_highlight_all=1
 
-python3 << EOF
+python << EOF
 import os
 import sys
 if 'VIRTUAL_ENV' in os.environ:

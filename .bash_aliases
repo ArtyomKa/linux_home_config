@@ -21,5 +21,5 @@ function activate() {
 	return 1
 }
 
-export -f activate
+#export -f activate
 
