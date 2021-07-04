@@ -21,5 +21,6 @@ function activate() {
 	return 1
 }
 
+alias scan_wifi='sudo iwlist wlp2s0 scan | egrep -e SSID'
 #export -f activate
 
