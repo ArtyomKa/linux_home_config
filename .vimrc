@@ -28,6 +28,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'rking/ag.vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'puremourning/vimspector'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,6 +54,8 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 " let g:netrw_browse_split = 1
 let g:netrw_winsize = 25
+
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
 " Themes
 "set background=dark

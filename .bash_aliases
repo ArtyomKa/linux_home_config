@@ -23,4 +23,10 @@ function activate() {
 
 alias scan_wifi='sudo iwlist wlp2s0 scan | egrep -e SSID'
 #export -f activate
+alias folde_size='du --max-depth=1 -h'
 
+set-title(){
+  ORIG=$PS1
+  TITLE="\e]2;$@\a"
+  PS1=${ORIG}${TITLE}
+}
